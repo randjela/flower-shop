@@ -1,0 +1,99 @@
+h1 {
+    text-align: center;
+    font-family: "Lora" serif;
+    color: #866a75;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+table {
+    width: 65%;
+    border-collapse: collapse;
+    font-family: 'Lora', serif;
+    background: linear-gradient(45deg, #BC9CA9, #e0e0e0);
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color:#47363c
+}
+
+th {
+    color: #866a75;
+}
+
+.product-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+input[type="number"] {
+    width: 40px;
+    padding: 4px;
+    text-align: center;
+}
+
+.order-form {
+    width: 30%; 
+    height: 20%;
+    padding: 20px;
+    background: linear-gradient(45deg, #e0e0e0, #BC9CA9);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 80px;
+    color: #57484d;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #47363c;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-form button {
+    background: linear-gradient(45deg, #866a75, rgb(109, 90, 97));
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-form button:hover {
+    background: linear-gradient(45deg, #47363c, #57484d);
+}
+

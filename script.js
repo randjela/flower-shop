@@ -32,3 +32,46 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('stuck');
     }
 });
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuItems = mobileMenu.querySelectorAll('a'); 
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+
+mobileMenuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    mobileMenu.classList.remove('active'); 
+    setTimeout(() => {
+      window.location.href = event.target.href; 
+    }, 200); 
+  });
+});
+
+
+
+window.addEventListener('scroll', () => {
+    const orderForm = document.getElementById('order-form');
+    const productList = document.querySelector('table');
+    const productListRect = productList.getBoundingClientRect();
+
+    if (window.scrollY > productListRect.bottom) {
+        orderForm.style.top = '20px'; 
+        orderForm.style.position = 'sticky';
+    } else {
+        orderForm.style.position = 'static';
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("myButton");
+
+    button.addEventListener("click", function () {
+        const url = "Stranice/porudzbina.html";
+
+        window.location.href = url;
+    });
+});

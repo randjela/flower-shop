@@ -9,9 +9,16 @@ header {
     font-style: oblique;
     font-size: 1.5em;
     text-align: center;
-    background-color:rgb(101,77,85);
+    background-color: #BC9CA9;
     color: #fff;
     padding: 20px;
+}
+
+p {
+    font-size: 1em;
+    text-align: center;
+    color:#715862;
+
 }
 
 .gallery {
@@ -31,32 +38,14 @@ header {
     transition: transform 0.2s ease-in-out;
 }
 
-.photo img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-    object-fit: cover;
-    transition: transform 0.2s ease-in-out;
-}
-
-.caption {
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(101,77,85);
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.photo img {  
+    height: 100%;
     width: 100%;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .photo:hover {
     transform: scale(1.05);
 }
 
-.photo:hover .caption {
-    opacity: 0.9; 
-}
+

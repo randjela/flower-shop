@@ -2,12 +2,13 @@
 <html lang="sr">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Bonsai</title>
     <link rel="icon" type="image/x-icon" href="Slike/logo.png">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -21,18 +22,18 @@
         <ul id="navlinks">
             <li><a href="#information">O nama</a></li>
             <li><a href="#asortiman">Asortiman</a></li>
-            <li><a href="#Kontakt">Kontakt</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
         </ul>
         <div id="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <div id="menu">
+        <div id="mobile-menu">
             <ul>
                 <li><a href="#information">O nama</a></li>
                 <li><a href="#asortiman">Asortiman</a></li>
-                <li><a href="#Kontakt">Kontakt</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </div>
     </nav>
@@ -42,7 +43,7 @@
                 <img src="Slike/slika.png" alt="Aranzman u kutiji" width="50%" height="50%">
                 <div id="overlay">
                     <p>Iznenadite svoje voljene predivnim <br>znakom pažnje<br></p>
-                    <button class="button">Pogledaj ponudu</button>
+                    <a href="Stranice/porudzbina.html" class="button">Pogledaj ponudu</a>
                 </div>
             </div>
             <div id="heading">
@@ -64,15 +65,19 @@
     <section id="asortiman">
         <div id="content-2">
             <h1>Popularni aranžmani</h1>
-            <div class="image-container-2">
-                <img src="Slike/buket1.jpg" alt="Ruže">
-                <img src="Slike/buket2.jpg" alt="Lale">
-                <img src="Slike/buket3.jpg" alt="Gerberi">
-            </div>
-            <div class="image-container-2">
-                <div><h1>Ruže (lat. Rosa)</h1></div>
-                <div><h1>Lale (lat. Tulipa)</h1></div>
-                <div><h1>Gerberi sa Ružama<br>(lat. Gerbera, Rosa)</h1></div>
+            <div class="image-container-4">
+                <div class="image-description">
+                    <img src="Slike/buket1.jpg" alt="Ruže">
+                    <p>Ruže(lat. Rosa)</p>
+                </div>
+                <div class="image-description">
+                    <img src="Slike/buket2.jpg" alt="Lale">
+                    <p>Lale(lat.Tulipa)</p>
+                </div>
+                <div class="image-description">
+                    <img src="Slike/buket3.jpg" alt="Gerberi">
+                    <p>Gerberi(lat.Gerbera)</p>
+                </div>
             </div>
             <div class="image-container-3">
                 <div class="rectangle"><h2>CVEĆE NEDELJE<br>Afrička ivančica (lat. Osteospermum)</h2>
@@ -85,21 +90,25 @@
     </div>
     <div class="aranzmani">
         <h1>Aranžmani</h1>
-        <div class="image-container-2">
-            <a href="aranzmani.html">
+        <div class="image-container-4">
+            <a href="Stranice/aranzmani.html" class="aranzmani-item">
                 <img src="Slike/prilike.jpg" alt="Posebne prilike">
+                <div class="aranzmani-overlay">
+                    <h2>Posebne prilike</h2>
+                </div>
             </a>
-            <a href="dekoracija.html">
+            <a href="Stranice/dekoracija.html" class="aranzmani-item">
                 <img src="Slike/dekoracija.jpg" alt="Svadbena dekoracija">
+                <div class="aranzmani-overlay">
+                    <h2>Svadbena dekoracija</h2>
+                </div>
             </a>
-            <a href="buketi.html">
+            <a href="Stranice/buketi.html" class="aranzmani-item">
                 <img src="Slike/buketi.jpg" alt="Buketi">
+                <div class="aranzmani-overlay">
+                    <h2>Buketi</h2>
+                </div>
             </a>
-        </div>
-        <div class="image-container-2">
-            <div><h1>Posebne prilike</h1></div>
-            <div><h1>Svadbena dekoracija</h1></div>
-            <div><h1>Buketi</h1></div>
         </div>
         <p>Istražite našu raznoliku kolekciju cvetnih aranžmana, svaki pažljivo kreiran kako bi dodao notu svežine i lepote vašim trenucima.<br>
            Bez obzira na priliku ili stil, naša paleta obuhvata bukete za posebne trenutke, elegantne minimalističke dizajne, luksuzne aranžmane i još mnogo toga.<br> Otkrijte svoju idealnu cvetnu priču danas.
@@ -111,29 +120,61 @@
         <p id="nrc">NARUČI</p>
         <p id="sb">svoj buket</p>
         </div>
-        <button class="round-button">
+      <a href="Stranice/porudzbina.html"><button class="round-button" id="myButton">
             <img src="Slike/flowers.png" alt="Button Image">
-        </button>
+        </button></a>
     </div>
     <h1>Cveće u saksiji</h1>
-    <div class="image-container-2">
-        <img src="Slike/alocasia.jpg" alt="Alocasia">
-        <img src="Slike/monstera.jpg" alt="Monstera">
-        <img src="Slike/calathea.jpg" alt="Calathea">
-        <img src="Slike/fiddle.jpg" alt="Fiddle">
-        <img src="Slike/lily.jpg" alt="Lily">
-        <img src="Slike/snake.jpg" alt="Snake">
-    </div>
-    <div class="image-container-2">
-        <div><h1>Ruže (lat. Rosa)</h1></div>
-        <div><h1>Lale (lat. Tulipa)</h1></div>
-        <div><h1>Gerberi sa Ružama<br>(lat. Gerbera, Rosa)</h1></div>
-        <div><h1>Ruže (lat. Rosa)</h1></div>
-        <div><h1>Lale (lat. Tulipa)</h1></div>
-        <div><h1>Gerberi sa Ružama<br>(lat. Gerbera, Rosa)</h1></div>
+    <div class="image-container-4">
+        <div class="image-description">
+            <img src="Slike/alocasia.jpg" alt="Alocasia">
+            <p>Adam(lat. Alocasia)</p>
+        </div>
+        <div class="image-description">
+            <img src="Slike/monstera.jpg" alt="Monstera">
+            <p>Monstera(lat. Monstera deliciosa)</p>
+        </div>
+        <div class="image-description">
+            <img src="Slike/calathea.jpg" alt="Calathea">
+            <p>Kalateja(lat. Calathea)</p>
+        </div>
     </div>
     </section>
+    <section id="kontakt">
+        <h2 class="contact-heading">
+            Kontaktirajte <span class="us">nas</span>
+        </h2>
+        <p>Imate pitanja ili želite da poručite cveće? Popunite formu ispod:</p>
+        
+        <form action="mailto:r.andjela.design@gmail.com" method="post" enctype="text/plain">
+            <label for="ime">Vaše ime:</label>
+            <input type="text" id="ime" name="ime" required>
+            
+            <label for="email">Vaša email adresa:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="poruka">Poruka:</label>
+            <textarea id="poruka" name="poruka" rows="4" required></textarea>
+            
+            <input type="submit" value="Pošalji">
+        </form>
+        <div class="map-container">
+            <h3>Gde se nalazimo</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11673.090736836006!2d21.9435209!3d42.9935924!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475582a564deddc7%3A0xf2cffb6b5a4f5f1b!2sBONSAI!5e0!3m2!1ssr!2srs!4v1695590855576!5m2!1ssr!2srs" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="social-media">
+            <h3>Pratite nas na društvenim mrežama</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/bonsaicvecara/" target="_blank"><img src="Slike/fb.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/cvecarabonsai/" target="_blank"><img src="Slike/insta.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </section>
     <script src="script.js"></script>
-</body>
 
+    <footer>
+        <p>&copy; 2023 Cvećara Bonsai</p>
+    </footer>
+    
+</body>
 </html>

@@ -1,0 +1,68 @@
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.thank-you-container {
+    background: #866a75;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 600px;
+    width: 80%;
+    animation: fade-in 0.5s ease;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #23010C;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.4em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.thank-you-message {
+    font-size: 1.8em;
+    color: #23010C;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+.continue-shopping-button {
+    background-color: #BC9CA9;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.4em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.continue-shopping-button:hover {
+    background-color: #23010C;
+}
+
