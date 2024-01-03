@@ -514,17 +514,27 @@ h1 {
     color:#68515a;
 }
 
+/* Base styles for larger screens (default) */
 .contact-heading {
-    font-size: 36px;
+    font-size: 36px; /* Existing font size */
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: bold;
-    color:#23010C;
+    color: #23010C;
 }
 
 .contact-heading .us {
-    color:#68515a;
+    color: #68515a;
     font-style: italic;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .contact-heading {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+
+    /* You can also adjust other elements here if needed */
 }
 
 form {
@@ -815,7 +825,9 @@ footer {
     }
 
     #kontakt {
-        padding: 10px;
+        max-width: 100%;
+        margin: 50px auto;
+        padding: 10px; 
     }
 
     form {
