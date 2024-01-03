@@ -474,6 +474,7 @@ h1 {
 }
 
 .product-gallery {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
@@ -640,6 +641,28 @@ input[type="submit"]:hover {
     border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #BC9CA9; /* Change the color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.back-button-container {
+    position: relative; /* or 'absolute' if needed */
+    /* Other styling as required */
+}
+
+.back-button:hover {
+    background-color: #9a7b8e; /* Darker shade for hover effect */
 }
 
 footer {

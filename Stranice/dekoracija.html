@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="../Slike/logo.png">
 </head>
 <body>
+    <button id="backButton" onclick="history.back()" class="back-button">Nazad</button>
     <header>
         <h1>Svadbena dekoracija</h1>
     </header>
@@ -67,5 +68,15 @@
             <img src="../Slike/dekoracija/16.jpg" alt="Wedding Decoration 3">
         </div>
     </div>
+    <script>
+        window.onscroll = function() {
+            var backButton = document.getElementById("backButton");
+            if (window.scrollY > 100) { 
+                backButton.style.display = "none";
+            } else {
+                backButton.style.display = "block";
+            }
+        };
+    </script>
 </body>
 </html>

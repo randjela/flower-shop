@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <button onclick="history.back()" class="back-button">Nazad</button>
     <div class="product-gallery">
         <div class="product">
             <img src="../Slike/prilike/proizvod1.jpg" alt="Product 1">
@@ -163,5 +164,15 @@
             <p>5,000.00 din</p>
         </div>
     </div>
+    <script>
+        window.onscroll = function() {
+            var backButton = document.getElementById("backButton");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                backButton.style.display = "none";
+            } else {
+                backButton.style.display = "block";
+            }
+        };
+    </script>
 </body>
 </html>

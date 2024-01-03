@@ -7,6 +7,7 @@
     <title>Porudžbina</title>
 </head>
 <body>
+    <button id="backButton" onclick="history.back()" class="back-button">Nazad</button>
     <h1>Porudžbina</h1>
     <form onsubmit="redirectToThankYouPage()">
     <!-- form action="mailto:r.andjela.design@gmail.com" method="post" -->
@@ -283,6 +284,16 @@
                 window.location.href = 'thank_you.html';
             }, 100);
         }
-    </script>    
+    </script> 
+    <script>
+        window.onscroll = function() {
+            var backButton = document.getElementById("backButton");
+            if (window.scrollY > 100) { 
+                backButton.style.display = "none";
+            } else {
+                backButton.style.display = "block";
+            }
+        };
+    </script>   
 </body>
 </html>
