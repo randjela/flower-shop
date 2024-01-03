@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Porudžbina</h1>
-    <form action="mailto:r.andjela.design@gmail.com" method="post">
+    <form onsubmit="redirectToThankYouPage()">
+    <!-- form action="mailto:r.andjela.design@gmail.com" method="post" -->
     <div class="container">
     <table>
         <thead>
@@ -275,5 +276,13 @@
         </form>
     </div>
     </div>
+    <script>
+        function redirectToThankYouPage() {
+            event.preventDefault();
+            setTimeout(function() {
+                window.location.href = 'thank_you.html';
+            }, 100);
+        }
+    </script>    
 </body>
 </html>
