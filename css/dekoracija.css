@@ -48,4 +48,24 @@ p {
     transform: scale(1.05);
 }
 
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #BC9CA9; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; 
+}
+
+.back-button-container {
+    position: relative; 
+}
+
+.back-button:hover {
+    background-color: #9a7b8e;
+}
 
